@@ -33,7 +33,7 @@ print("your utilities is $", utilities, " ,which is" , utilities_percentage, "of
 # Your transportation is $XX.XX which is XX% of your income. (print)
 print("your groceries is $", income, which is" , groceries_percentage, "of your income")
 # Your savings is $XX.XX which is XX% of your income. (print)
-
+print( )
 # Your spendings is $XX.XX which is XX% of your income. (print)
 
 # Your spending is $XX.XX which is XX% of your income. (print)
