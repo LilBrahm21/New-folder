@@ -1,3 +1,5 @@
 # brahm brar, python variblrd practice
+name = input("What is your name?: ")
 
-name = "brahm"
+
+print("Hello "+ name + "!" )
