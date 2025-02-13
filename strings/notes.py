@@ -13,3 +13,8 @@ print(note)
 
 sentence = "The quick brown fox jumps over the lazy dog"
 
+#print(len(sentence))
+#print(sentence[4])
+start= sentence.find("brown")
+length= len("brown")
+print(sentence[start:start+length])
