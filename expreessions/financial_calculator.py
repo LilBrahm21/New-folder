@@ -28,7 +28,7 @@ transportation_percentage = (transportation / income) * 100
 spending_percentage = (spending / income) * 100  
 saving_percentage = (saving / income) * 100  
 # Your utilites is $XX.XX which is XX% of your income. (print)
-print(f"Your rent is 1000${rent:.2f}, which is {rent_percentage:.2f}% of your income.")  
+print(f"Your rent is ${rent:.2f}, which is {rent_percentage:.2f}% of your income.")  
 # Your groceries is $XX.XX which is XX% of your income. (print)
 print(f"Your utilities is ${utilities:.2f}, which is {utilities_percentage:.2f}% of your income.")  
 # Your transportation is $XX.XX which is XX% of your income. (print)
