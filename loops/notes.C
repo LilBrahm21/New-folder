@@ -21,6 +21,6 @@ grades[2] = 95;
 printf("CSP Grade: %d\n", grades[2])
 
 int size = sizeof (grades);
-printf("%d\n", size)
+printf("%d\n", size);
   return 0;
 }
