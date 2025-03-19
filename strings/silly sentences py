@@ -1,7 +1,7 @@
 #brahm Brar silly sentences python
 
 name = input("Type a name: ")
-place = input("Typa a place: ")
-verb = input("Type a past tense verb: ")
-noun = input("Type a noun: ")
+place = input("Type a restarant: ")
+verb = input("Type a verb: ")
+noun = input("Type a fun place: ")
 print(name, "ate at the",place, "where he",verb, "and went to",noun,".")
