@@ -1,20 +1,16 @@
-# brahm brar, how to get the time of day python
+import datetime
 import time
 
-#first instance of the time in program
-first_time = time.gmtime()
-#print(first_time)
+now = datetime.datetime.now().hour
+now_tm = time.localtime()
+hour = now_tm.tm_hour
+print(now)
 
-#current time in seconds
-current = time.time()
-print(current) #seconds since Jan 1 1970
-
-#current date and time like we see it notmally
-now = time.ctime(current)
-#print(now)
-
-#get just a part of the time
-local_time = time.localtime(current)
-day = local_time.tm_wday
-hour = local_time.tm_hour #military time (0-23)
-print(hour)
+if hour <= 12:
+    print("Good Morning!")
+elif hour <= 18:
+    print("Good Afternoon!")
+elif hour <= 20:
+    print("Good Evening!")
+else:
+    print("Good NIGHT!\n Go to bed!")
