@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "notes.C": "cpp"
+        "notes.C": "cpp",
+        "Updhelloworld.C": "cpp",
+        "financial_calculatorUpdate.C": "cpp"
     }
 }
