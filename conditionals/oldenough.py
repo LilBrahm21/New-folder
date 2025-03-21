@@ -1,4 +1,5 @@
-age = input("please type your age here")
+# Brahm Brar Old Enough Python
+age = int(input("Please type your age here:"))
 if age >= 18:
     print("You are old enough to vote!")
 elif age >= 16:

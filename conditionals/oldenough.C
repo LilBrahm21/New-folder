@@ -1,6 +1,13 @@
+// Brahm Brar Old Enough C
 #include<stdio.h>
-int age = 14;
+#include <string.h>
+int age;
+
 int main(void){
+    printf("Hello I will tell you if you are old enough!\n");
+    printf("How old are you?\n");
+    scanf("%d", &age);
+
     if (age >= 18){
     printf("You are old enough to vote!\n");
 }else if (age >= 16){
