@@ -3,6 +3,7 @@
         "notes.C": "cpp",
         "Updhelloworld.C": "cpp",
         "financial_calculatorUpdate.C": "cpp",
-        "oldenough.C": "cpp"
+        "oldenough.C": "cpp",
+        "FizzBuzz.C": "cpp"
     }
 }
