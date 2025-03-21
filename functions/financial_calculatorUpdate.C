@@ -1,40 +1,35 @@
+#include <stdio.h>
+#include <math.h>
 
-#include<stdio.h>
-float income, rent, utilities, groceries, transportation, savings, expenses, spend;
-
-float input(char type[], float var){
-    printf("How much is your %s: \n", type);
-    scanf("%f", &var);
-    return var;
+char name [1000];
+float user_input(char*money){
+    float value;
+    printf("%s", money);
+    scanf("%f", &value);
+    return value;
 }
-
-
-void percent(char type[], int amount){
-    int per = amount/income *100;
-    printf("Your %s is %d%% of your income\n", type, per);
+void print_result(char*item_name, float number, float income){
+    float percentage = (number/income)*100;
+    printf("%s, your monthly %s is $%.2f which is %.2f%% of your income!\n", name, item_name, number, percentage);
 }
-
-
 int main(void){
-    printf("This is going to calculate your budget for the month\n");
-    income = input("income", income);
-    rent = input("rent", rent);
-    utilities = input("utilities", utilities);
-    groceries = input("groceries", groceries);
-    transportation = input("tranportation", transportation);
-    savings = income *.2;
-    expenses = rent + utilities + groceries + transportation;
-    spend = income - savings - expenses;
-    printf("Your income is: $%.2f\n", income);
-    printf("Your expenses are: $%.2f\n", expenses);
-    printf("Your savings are: $%.2f\n", savings);
-    printf("You have $%.2f left to spend\n", spend);
+    float income, rent, utilities, groceries, transportation, savings, spendings;
 
-    percent("rent", rent);
-    percent("utilities", utilities);
-    percent("groceries", groceries);
-    percent("transportation", transportation);
-    percent("savings",savings);
-    percent("expenses", expenses);
+    income = user_input("What is your income?: \n");
+    rent = user_input("What is your rent?: \n");
+    utilities = user_input("How much do your utilities cost?: \n");
+    groceries = user_input("How much do your groceries cost?: \n");
+    transportation = user_input("How much does transportation cost?: \n");
+   
+    savings = income*0.1;
+    spendings = income-savings-rent-utilities-groceries-transportation;
+
+    print_result("rent", rent, income);
+    print_result("utilities", utilities, income);
+    print_result("groceries", groceries, income);
+    print_result("transportation", transportation, income);
+    print_result("savings", savings, income);
+    print_result("spendings", spendings, income);
+   
     return 0;
 }
