@@ -1,28 +1,26 @@
 #Brahm Brar Fiancial Calculator Update Python
-print("Welcomes user this is a fanacial calculator for your needs.")
-
-def values(value):
-    float(input(f"What is your {value}?\n"))
-
-income = values("income")
-rent = values("rent")
-utlities = values("utlities")
-groceries = values("groceries")
-transportation = values("transportation")
-
-# calculate savings as 10% of income (income*.1) (varible)
-savings = (income*.1)
-saving = (savings/income)*100
-spending = income-savings-rent-utlities-groceries-transportation
-spendings =(spending/income)*100
-
 def info(cost, income, type):
-    percent = (cost/income)*100
-    print(f"your {type} is ${cost:.2f}, Which is, {percent}, of your income. \n")
+    percentage = cost/income*100
+    print(f"Your {type} is ${cost:.2f}, which is {percentage} percent of your income.")
+
+name = input("What is your name?\n")
+
+
+def user(answer):
+    pregunta = (f"What is your {answer} ?\n")
+    return float(input(pregunta))
+
+income = user("income")
+rent = user("rent")
+utilities = user("utilities")
+groceries = user("groceries")
+transportation = user("transportation")
+savings = income*.1
+spending = income-savings-rent-utilities-groceries-transportation
 
 info(rent, income, "rent")
-info(utlities, income, "utities")
+info(utilities, income, "utilities")
 info(groceries, income, "groceries")
 info(transportation, income, "transportation")
-info(saving, income, "saving")
+info(savings, income, "savings")
 info(spending, income, "spending")
