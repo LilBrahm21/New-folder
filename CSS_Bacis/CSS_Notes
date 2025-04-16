@@ -1,0 +1,56 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charsret="UTF-8">
+        <titel>html advanced notes</titel>
+        <style>
+            *{
+                background-color: black;
+                color: rgb(6, 66, 166)
+            }
+            p{
+                color:blue;
+                text-align: left;
+                font-family:georgia, 'Times New Roman', serif;
+            }
+            #intro{
+                color:limegreen;
+            }
+            #list{
+                color:red;
+            }
+            p{
+                color:blueviolet;
+            }
+        </style>
+    </head>
+    </body>
+        <div id="Intro">
+            <h1> HTML advanced notes</h1>
+            <p> nested tag is a tag that exist in an oher tag. some soul some shouldnt be nested</p>
+            <p> an atribute is further instructions for the computer give inside the opening tag.</p>
+        </div id="list">
+            <ol>
+                <li>This is an item</li>
+                <li>another item</li>
+            </ol>
+            <ul style="list-style-type:square">
+                <li>way of kings</li>
+                <li>skyward</li>
+                <li>mistborn</li>
+            </ul>
+            <dl>
+                <dt>
+                    Aang
+                </dt>
+                <dd> last air bender. <a href="https://en.wikipedia.org/wiki/Avatar:_The_Last_Airbender"target="_blank">avatar</a>.</dd> 
+           <dt>katara</dt>
+            <dd>water. bender. preachy cry baby</dd>
+        </dl>
+        <a href="https://en.wikipedia.org/wiki/Avatar:_The_Last_Airbender"target="_blank">to learm about links</a>
+    </div>
+    <div id="images">
+        <img src="https://www.google.com/search?sca_esv=74f21cfebe610369&rlz=1C1VDKB_enUS1156US1156&q=aang&udm=2&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBpcx8kZB4NRoUjdgt8WwoMsuFheHiaV5L0-DgVBQKOuTHVr56EP7wEnRboQt3I1M10JKHSFm_kCepRmV21XNQ1EorAiBVmXA8E7rdHafQhZ0RRR_up100HxrPxkgQaaqZOfN0vJ4FKMqqCUUgDGfH-sXaJMSnhwo7KtXFM-yltL0Q1Y74A&sa=X&ved=2ahUKEwjLwYTYi92MAxW8D0QIHWLqHVQQtKgLegQIFRAB&biw=2560&bih=1305&dpr=1&safe=active&ssui=on#vhid=oh2xpddlgWdEuM&vssid=mosaic" alt="aang bartering" >
+        <p>image from redbubble.com</p>
+    </div>
+</body>
