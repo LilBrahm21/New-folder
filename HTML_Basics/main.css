@@ -1,0 +1,21 @@
+body{
+    background-color:rgb(143, 143, 143);
+    color:rgb(88, 20, 20);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+}
+#car{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#two{
+    display: flex;
+}
+img{
+    width: 700px;
+    height: auto;
+}
+#three{
+    display: flex;
+}
