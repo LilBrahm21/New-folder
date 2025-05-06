@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="Final.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<style>
+.container {
+    font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 5px;
+  background-color: #000000;
+  padding: 5px;
+  height: 100%;
+}
+.container > div {
+  background-color: #db7f7f;
+  padding: 10px;
+}
+.container > div.header {
+  grid-area: header;
+  text-align: center;
+}
+.container > div.menu {
+  grid-area: menu;
+}
+.container > div.content {
+  grid-area: content;
+}
+.container > div.content {
+  grid-area: content;
+}
+.container > div.content {
+  grid-area: content;
+}
+.container > div.content {
+  grid-area: content;
+}
+
+img{
+  width: 400px;
+  height: auto;
+}
+.row {
+  width: 200px;
+  height: auto;
+  display: flex;
+}
+.column {
+  flex: 33.33%;
+  padding: 10px;
+}
+.menu{
+  display: flex;
+}
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+#myDIV{
+  text-align: center;
+}
+#visit{
+  text-align: center;
+}
+.row {
+  display: flex;
+}
+
+
+.column {
+  flex: 33.33%;
+  padding: 60px;
+}
+</style>
+
+<body>
+
+<div class="container">
+  <div class="header"><h1>Little Sahara Recreation Area</h1></div>
+  <div class="menu"><ol>
+    <div class="row">
+      <div class="column">
+        <img id="image" src="https://dirtwheelsmag.com/wp-content/uploads/2018/08/LITTLE_SAHARRA_SPRD-e1539123172352.jpg">
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-container">
+    <button onclick="myFunction()">Show Less</button>
+    <div id="myDIV">
+      <h3>Geologic History of Little Sahara</h3>
+      <p>The Sevier Desert was inundated by waters of prehistoric Lake Bonneville from about 20,000 to 12,500 years ago. Lake Bonneville was a large freshwater lake that at its greatest extent covered most of Utah’s western valleys and small parts of Idaho and Nevada. Two distinct shorelines were created while the lake occupied this area, the Bonneville (highest) and the Provo shorelines. Each formed when the level of the lake remained relatively constant for hundreds of years. A large delta formed where the Sevier River, after leaving Leamington Canyon, entered Lake Bonneville while at the Provo level. After Lake Bonneville receded, winds from the southwest transported deltaic sand northeast, forming the current dune field. Most of the dunes remain active, migrating 5 to 9 feet per year. Windblown sand tends to accumulate in the northeast due to elevation changes and natural barriers like the Sand Hills, which lie perpendicular to the wind direction and redirect the sand. Though mostly quartz, the sand also contains minerals like feldspar, biotite, calcite, garnet, and magnetite. A magnet dragged through the sand may collect magnetite, likely eroded from volcanic rock upstream.</p></div>
+  </div>
+
+  <div class="Things">
+    <div>
+      <h3>Things To Do</h3>
+      <oi>
+        <li>Off-Road Vehicle Riding (OHVs/ATVs/UTVs)</li>
+        <li>Dune Buggy and Dirt Bike Riding</li>
+        <li>Camping (developed and primitive sites)</li>
+        <li>Sandboarding and Sand Sledding</li>
+      </oi>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="https://www.blm.gov/sites/default/files/styles/hero_lg_content/public/hero_backgrounds/little%20sahara.jpg?h=c74750f6&itok=iUS_Qup7" alt="Snow" >
+        <p>Image from: Bureau of Land Management</p>
+      </div>
+      <div class="column">
+        <img src="https://images.ctfassets.net/0wjmk6wgfops/X7RldWXEROAFO4C5ndBCr/1fa4bde9a089f45a1203f603987eac5c/fce3925222_9ffef4bb-5318-4dc1-b9b8-0b6a6094cb28.jpg?w=1280&h=800&fit=fill&f=center&q=80&fm=webp" >
+        <p>Image from: Utah.com </p>
+      </div>
+      <div class="column">
+        <img src="https://juab.is/wp-content/uploads/2024/07/Bruce-Wilson-NEPHI_39-scaled.jpg" >
+        <p>Image from: https:juab.is</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <h3 id="visit">Why You Should Go Here</h3>
+    <p> Little Sahara in Utah is a must-visit destination for outdoor enthusiasts and adventure seekers. This unique desert landscape offers miles of stunning sand dunes, perfect for activities like off-roading, dune buggies, and sandboarding. The vast, golden sand stretches across the horizon, providing a serene escape from the bustle of everyday life. Whether you're camping under the stars, exploring the dramatic dunes, or hiking the nearby trails, Little Sahara promises an unforgettable experience. The remote location ensures tranquility and a chance to connect with nature, while the variety of terrain caters to different interests, from motorized sports to peaceful exploration. It's a perfect blend of adventure and serenity, making it a hidden gem in Utah's diverse outdoor offerings.
+    </p></div>
+  </body>
+</html>
